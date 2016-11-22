@@ -1,0 +1,39 @@
+{
+  "name": "RiceBookServer",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Demo RiceBookServer",
+  "license": "MIT",
+  "repository": "https://github.com/skotep/webdev",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "cloudinary": "^1.4.4",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.13.3",
+    "express-session": "^1.14.2",
+    "md5": "^2.2.1",
+    "mongoose": "^4.6.5",
+    "morgan": "^1.7.0",
+    "multer": "^1.2.0",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth": "^1.0.0",
+    "redis": "^2.6.3"
+  },
+  "scripts": {
+    "start": "node --use_strict index.js",
+    "watch": "nodemon index.js",
+    "test": "mocha --opts mocha.opts src/**/*.spec.js",
+    "test:watch": "npm run test -- -w"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "es6-promise": "^4.0.5",
+    "fs": "0.0.1-security",
+    "isomorphic-fetch": "^2.2.1",
+    "mocha": "^3.1.2",
+    "nodemon": "^1.11.0",
+    "request": "^2.78.0"
+  }
+}
