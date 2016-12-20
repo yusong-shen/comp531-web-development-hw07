@@ -158,8 +158,8 @@ const isLoggedIn = (req, res, next) => {
 
 	// const username = sessionUser[sid]
     redis.hgetall(sid, function (err, userObj) {
-        console.log(sid + ' mapped to ', userObj.username)
-        if (userObj.username) {
+        if (userObj && userObj.username) {
+            console.log(sid + ' mapped to ', userObj.username)
             const username = userObj.username
             req.username = username
             next()
